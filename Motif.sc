@@ -83,4 +83,8 @@ Motif {
 
 		// all = all.freezeAsParent;
 	}
+
+	asPbind {
+		^Pbind(\degree, Pseq(this.degree, inf), \dur, Pseq(this.dur, inf));
+	}
 }
