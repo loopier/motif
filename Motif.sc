@@ -1,19 +1,9 @@
 Motif {
 	classvar <all;
-	// var <>kick, <>sn, <>ch, <>oh, <>rim, <>cym, <>bell, <>cl, <>sh, <>ht, <>mt, <>lt, <>acc;
     var <>motif;
 
-	// set motifs with arrays of hit positions [1,3] == [1, \r, 4, \r]
-    *new { arg degree=[], dur=[];
-		var pat = (
-            degree: degree,
-            dur: dur,
-		);
-		^super.newCopyArgs(pat);
-    }
-
-	// set motifs as arrays of 1's and \r's
-    *with { arg degree=[], dur=[];
+	// set motifs with arrays
+    *new { arg degree=[0], dur=[1];
 		var pat = (
             degree: degree,
             dur: dur,
